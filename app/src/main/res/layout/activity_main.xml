@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/percent"
+            style="@style/operators1Button"
+            android:text="@string/percent"/>
+
+        <TextView
+            android:id="@+id/clear"
+            style="@style/operators1Button"
+            android:text="@string/c"/>
+
+        <TextView
+            android:id="@+id/backspace"
+            style="@style/operators1Button"
+            android:text="@string/backspace"/>
+
+        <TextView
+            android:id="@+id/division"
+            style="@style/operators2Button"
+            android:text="@string/bar"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numberSeven"
+            style="@style/NumbersButton"
+            android:text="@string/_7"/>
+
+        <TextView
+            android:id="@+id/numberEight"
+            style="@style/NumbersButton"
+            android:text="@string/_8"/>
+
+        <TextView
+            android:id="@+id/numberNine"
+            style="@style/NumbersButton"
+            android:text="@string/_9"/>
+
+        <TextView
+            android:id="@+id/multiplication"
+            style="@style/operators2Button"
+            android:text="@string/multiplication"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numberFour"
+            style="@style/NumbersButton"
+            android:text="@string/_4"/>
+
+        <TextView
+            android:id="@+id/numberFive"
+            style="@style/NumbersButton"
+            android:text="@string/_5"/>
+
+        <TextView
+            android:id="@+id/numberSix"
+            style="@style/NumbersButton"
+            android:text="@string/_6"/>
+
+        <TextView
+            android:id="@+id/subtraction"
+            style="@style/operators2Button"
+            android:text="@string/subtraction"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numberOne"
+            style="@style/NumbersButton"
+            android:text="@string/_1"/>
+
+        <TextView
+            android:id="@+id/numberTwo"
+            style="@style/NumbersButton"
+            android:text="@string/_2"/>
+
+        <TextView
+            android:id="@+id/numberThree"
+            style="@style/NumbersButton"
+            android:text="@string/_3"/>
+
+        <TextView
+            android:id="@+id/addition"
+            style="@style/operators2Button"
+            android:text="@string/addition"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/numberZero"
+            style="@style/NumbersButton"
+            android:text="@string/_0" />
+
+        <TextView
+            android:id="@+id/point"
+            style="@style/NumbersButton"
+            android:text="@string/point"/>
+
+        <TextView
+            android:id="@+id/equals"
+            style="@style/operators2Button"
+            android:text="@string/equals"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+</LinearLayout>
